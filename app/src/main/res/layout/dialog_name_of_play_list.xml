@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dialog_add_new_play_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:windowSoftInputMode="adjustResize"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        android:paddingBottom="35dp">
+
+        <TextView
+            android:id="@+id/tv_name_of_play_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingTop="20dp"
+            android:text="@string/t_n_danh_s_ch_ph_t"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_enter_name_of_play_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingTop="20dp"
+            android:text="@string/nh_p_t_n_danh_s_ch_ph_t"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_enter_name_of_play_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/custom_editext_name_of_play_list"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingStart="10dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="15dp"
+            android:text="@string/danh_s_ch_m_i_1"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_enter_name_of_play_list" />
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/custom_button_cancel"
+            android:text="@string/h_y"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/bt_ok"
+            app:layout_constraintTop_toBottomOf="@id/et_enter_name_of_play_list" />
+
+        <Button
+            android:id="@+id/bt_ok"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/custom_button_delete"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toRightOf="@id/bt_cancel"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_enter_name_of_play_list" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

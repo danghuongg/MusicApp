@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp">
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/x_a"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_delete_a_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="@string/x_a_1_b_i_h_t"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_delete" />
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/h_y"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_button_cancel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/bt_delete"
+            app:layout_constraintTop_toBottomOf="@id/tv_delete_a_song" />
+
+        <Button
+            android:id="@+id/bt_delete"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/x_a"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_button_delete"
+            app:layout_constraintLeft_toRightOf="@id/bt_cancel"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_delete_a_song" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

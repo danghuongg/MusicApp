@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="#78777C" />
+
+        <TextView
+            android:id="@+id/tv_list_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="@string/danh_s_ch_ph_t"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:tint="#59595A"
+            app:layout_constraintBottom_toBottomOf="@id/iv_back"
+            app:layout_constraintLeft_toRightOf="@id/iv_back"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_back" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_tv_play_random"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            app:cardCornerRadius="40dp"
+            app:layout_constraintLeft_toLeftOf="@id/iv_back"
+            app:layout_constraintTop_toBottomOf="@id/iv_back">
+
+            <TextView
+                android:id="@+id/tv_play_random"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#EDECEC"
+                android:clickable="true"
+                android:drawablePadding="9dp"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="9dp"
+                android:paddingTop="4dp"
+                android:paddingRight="9dp"
+                android:paddingBottom="4dp"
+                android:text="@string/ph_t_ng_u_nhi_n"
+                android:textAllCaps="false"
+                android:textSize="13sp"
+                app:drawableStartCompat="@drawable/ic_baseline_repeat_24" />
+        </androidx.cardview.widget.CardView>
+
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/iv_add_played_list"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="25dp"-->
+<!--            android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/cv_tv_play_random"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@id/cv_tv_play_random"-->
+<!--            app:srcCompat="@drawable/ic_baseline_add_to_photos_24"-->
+<!--            app:tint="#CDCDCD" />-->
+
+
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cv_tv_add_list_play"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="35dp"-->
+<!--            app:cardCornerRadius="40dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+<!--            -->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/t_o_danh_s_ch_ph_t"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:background="@drawable/custom_tv_list_play"-->
+<!--                android:paddingTop="7dp"-->
+<!--                android:paddingEnd="15dp"-->
+<!--                android:paddingStart="8dp"-->
+<!--                android:paddingBottom="7dp"-->
+<!--                android:textSize="17sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:drawableLeftCompat="@drawable/ic_baseline_add_24" />-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

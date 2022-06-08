@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+    </data>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                android:tint="#3E3E40"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:src="@drawable/ic_baseline_more_24"
+                android:tint="#3E3E40"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/nh_c"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="@id/iv_back"
+                app:layout_constraintTop_toBottomOf="@id/iv_back" />
+
+            <RadioGroup
+                android:id="@+id/rg_problem_and_opinion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="@id/tv_music"
+                app:layout_constraintTop_toBottomOf="@id/tv_music">
+
+                <RadioButton
+                    android:id="@+id/rb_problem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/v_n"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_music" />
+
+                <RadioButton
+                    android:id="@+id/rb_opinion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:text="@string/ki_n_ngh"
+                    app:layout_constraintLeft_toRightOf="@id/rb_problem" />
+            </RadioGroup>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintTop_toBottomOf="@id/rg_problem_and_opinion">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="#ECEAEA">
+
+                    <EditText
+                        android:id="@+id/et_feedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="13dp"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/m_t"
+                        android:maxLines="5"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#E1DEDE"
+                        app:layout_constraintBottom_toTopOf="@id/tv_take_a_photo" />
+
+                    <TextView
+                        android:id="@+id/tv_take_a_photo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:drawableStart="@drawable/ic_baseline_photo_camera_24"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/th_m_nh_ho_c_video_ng_n"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/th_i_gian"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="@id/cv_feedback"
+                app:layout_constraintTop_toBottomOf="@id/cv_feedback" />
+
+            <TextView
+                android:id="@+id/tv_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/y_u_c_u"
+                android:textColor="#A8A8A8"
+                android:textSize="16sp"
+                app:layout_constraintRight_toLeftOf="@id/iv_forward"
+                app:layout_constraintTop_toBottomOf="@id/cv_feedback" />
+
+            <ImageView
+                android:id="@+id/iv_forward"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:tint="#A8A8A8"
+                app:layout_constraintRight_toRightOf="@id/cv_feedback"
+                app:layout_constraintTop_toBottomOf="@id/cv_feedback" />
+
+            <EditText
+                android:id="@+id/et_phonenumber_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_editext"
+                android:hint="@string/s_i_n_tho_i_email"
+                android:inputType="textEmailAddress|phone"
+                app:layout_constraintLeft_toLeftOf="@id/tv_music"
+                app:layout_constraintRight_toRightOf="@id/iv_forward"
+                app:layout_constraintTop_toBottomOf="@id/tv_time" />
+
+            <TextView
+                android:id="@+id/tv_add_diary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/y_u_c_u"
+                android:textColor="#A8A8A8"
+                android:textSize="16sp"
+                app:layout_constraintRight_toLeftOf="@id/iv_forward"
+                app:layout_constraintTop_toBottomOf="@id/cv_feedback" />
+
+            <RadioButton
+                android:id="@+id/rb_add_diary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/th_m_nh_t_k"
+                app:layout_constraintLeft_toLeftOf="@id/et_phonenumber_email"
+                app:layout_constraintTop_toBottomOf="@id/et_phonenumber_email" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rb_add_diary"
+                android:layout_marginTop="80dp"
+                app:cardCornerRadius="50dp">
+                <TextView
+                    android:id="@+id/tv_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:text="@string/g_i"
+                    android:background="#206FB5"
+                    android:textColor="@color/white"
+                    android:paddingStart="150dp"
+                    android:paddingEnd="150dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

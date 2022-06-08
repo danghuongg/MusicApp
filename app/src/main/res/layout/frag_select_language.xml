@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:id="@+id/view_vietnam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/iv_vietnam_flag"
+            app:layout_constraintBottom_toBottomOf="@id/iv_vietnam_flag"
+            app:layout_constraintLeft_toLeftOf="@id/iv_vietnam_flag"
+            app:layout_constraintRight_toRightOf="@id/tv_vietnam"/>
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_keyboard_backspace_24"
+            app:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_ngonngu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/ng_n_ng"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintLeft_toLeftOf="@id/iv_back"
+            app:layout_constraintTop_toBottomOf="@id/iv_back" />
+
+        <ImageView
+            android:id="@+id/iv_vietnam_flag"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/vietnamese_flag"
+            app:layout_constraintTop_toBottomOf="@id/tv_ngonngu"
+            app:layout_constraintLeft_toLeftOf="@id/tv_ngonngu"
+            android:layout_marginTop="40dp" />
+        <TextView
+            android:id="@+id/tv_vietnam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vi_t_nam"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_marginStart="10dp"
+            app:layout_constraintLeft_toRightOf="@id/iv_vietnam_flag"
+            app:layout_constraintTop_toTopOf="@id/iv_vietnam_flag"
+            app:layout_constraintBottom_toBottomOf="@id/iv_vietnam_flag"/>
+        <View
+            android:id="@+id/view_american"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/iv_american_flag"
+            app:layout_constraintBottom_toBottomOf="@id/iv_american_flag"
+            app:layout_constraintLeft_toLeftOf="@id/iv_american_flag"
+            app:layout_constraintRight_toRightOf="@id/tv_english"/>
+
+        <ImageView
+            android:id="@+id/iv_american_flag"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/american_flag"
+            app:layout_constraintTop_toBottomOf="@id/iv_vietnam_flag"
+            app:layout_constraintLeft_toLeftOf="@id/iv_vietnam_flag"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/tv_english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/english"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toRightOf="@id/iv_american_flag"
+            app:layout_constraintTop_toTopOf="@id/iv_american_flag"
+            app:layout_constraintBottom_toBottomOf="@id/iv_american_flag"/>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

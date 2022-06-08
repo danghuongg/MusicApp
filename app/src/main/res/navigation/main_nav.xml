@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@+id/home_fragment">
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.danghuong.musicapp.ui.frament.homefragment.HomeFragment"
+        android:label="home_Fragment"
+        tools:layout="@layout/home_fragment"/>
+
+    <fragment
+        android:id="@+id/watch"
+        android:name="com.danghuong.musicapp.ui.frament.watchfragment.WatchFragment"
+        android:label="xemfragment"
+        tools:layout="@layout/youtube_fragmen_rc"/>
+
+    <fragment
+        android:id="@+id/music_list"
+        android:name="com.danghuong.musicapp.ui.frament.nhaccuatoifragment.NhacCuaToiFragment"
+        android:label="xemfragment"
+        tools:layout="@layout/music_list_fragmen_rc"/>
+
+    <fragment
+        android:id="@+id/play_music_fragment"
+        android:name="com.danghuong.musicapp.ui.frament.playmusicfragment.PlayMusicFragment"
+        android:label="playMusicFragment"
+        tools:layout="@layout/play_music_fragment"/>
+
+    <fragment
+        android:id="@+id/favorite_fragment"
+        android:name="com.danghuong.musicapp.ui.frament.favoritefrag.FavoriteFragment"
+        android:label="favoriteFragment"
+        tools:layout="@layout/favorite_fragment_rc"/>
+
+    <fragment
+        android:id="@+id/menu_fragment"
+        android:name="com.danghuong.musicapp.ui.frament.menufragment.MenuFragment"
+        android:label="menu_Fragment"
+        tools:layout="@layout/menu_fragment"/>
+
+<!--    <fragment-->
+<!--        android:id="@+id/splash_screen"-->
+<!--        android:name="com.danghuong.musicapp.ui.frament.splashfragment.SplashScreenFragment"-->
+<!--        android:label="splash_screen"-->
+<!--        tools:layout="@layout/splash_screen_fragment"/>-->
+
+    <fragment
+        android:id="@+id/current_song"
+        android:name="com.danghuong.musicapp.ui.frament.recent.RecentSongFragment"
+        android:label="current_song"
+        tools:layout="@layout/recent_fragment_rc"/>
+
+    <fragment
+        android:id="@+id/setting_fragment"
+        android:name="com.danghuong.musicapp.ui.frament.settingfragment.SettingFragment"
+        android:label="setting_fragment"
+        tools:layout="@layout/setting_fragment"/>
+
+    <fragment
+        android:id="@+id/search_fragment"
+        android:name="com.danghuong.musicapp.ui.frament.searchfrag.searchfragment.SearchFragment"
+        android:label="search_fragment"
+        tools:layout="@layout/search_fragment"/>
+
+    <fragment
+        android:id="@+id/select_fragment"
+        android:name="com.danghuong.musicapp.ui.frament.selectfragment.SelectFragment"
+        android:label="select_fragment"
+        tools:layout="@layout/selection_fragment_rc"/>
+
+    <fragment
+        android:id="@+id/review_fragment"
+        android:name="com.danghuong.musicapp.ui.frament.reviewfragment.ReviewFragment"
+        android:label="review_fragment"
+        tools:layout="@layout/review_fragment"/>
+
+    <fragment
+        android:id="@+id/add_list_play_fragment"
+        android:name="com.danghuong.musicapp.ui.addlistplay.AddListPlayFragment"
+        android:label="add_list_play_fragment"
+        tools:layout="@layout/fragment_list_play" />
+
+    <fragment
+        android:id="@+id/account_mi_fragment"
+        android:name="com.danghuong.musicapp.ui.frament.accountmifrag.AccountMiFragment"
+        android:label="account_mi_fragment"
+        tools:layout="@layout/account_mi_fragment" />
+
+    <fragment
+        android:id="@+id/select_languge_frag"
+        android:name="com.danghuong.musicapp.ui.changelanguage.ChangeLanguageFrag"
+        android:label="select_languge_frag"
+        tools:layout="@layout/frag_select_language" />
+
+    <fragment
+        android:id="@+id/language_setting_frag"
+        android:name="com.danghuong.musicapp.ui.frament.settinglanguagefrag.FragSettingLanguage"
+        android:label="common_setting_frag"
+        tools:layout="@layout/fragment_setting" />
+
+
+
+
+</navigation>

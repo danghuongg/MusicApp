@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:background="@drawable/header_background"
+    android:weightSum="10">
+
+
+    <ImageView
+      android:layout_marginTop="7dp"
+        android:id="@+id/iv_songImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:layout_weight="2"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/picture_image" />
+
+    <TextView
+        android:layout_weight="6"
+        android:id="@+id/tv_song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="20sp"
+        android:text="@string/b_i_h_t_ang_ph_t" />
+
+    <ImageView
+        android:layout_marginTop="18dp"
+        android:layout_weight="1"
+        android:id="@+id/iv_play"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_baseline_pause_24"
+        app:tint="#A19E9E" />
+    <ImageView
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:id="@+id/iv_pause"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_baseline_play_arrow_24"
+        app:tint="#A19E9E" />
+
+    <ImageView
+        android:layout_marginTop="18dp"
+        android:layout_weight="1"
+        android:id="@+id/iv_clear"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        app:tint="#A19E9E"
+        android:src="@drawable/ic_baseline_clear_24" />
+
+</LinearLayout>

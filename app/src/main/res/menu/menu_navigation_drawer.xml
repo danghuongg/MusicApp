@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/trang_ch" />
+<!--    <item-->
+<!--        android:id="@+id/menu_favorite"-->
+<!--        android:icon="@drawable/ic_baseline_favorite_border_24"-->
+<!--        android:title="@string/y_u_th_ch" />-->
+    <item
+        android:id="@+id/menu_priavte"
+        android:icon="@drawable/ic_baseline_privacy_tip_24"
+        android:title="@string/ch_nh_s_ch_ri_ng_t" />
+    <item
+        android:id="@+id/menu_setting"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="@string/c_i_t" />
+</menu>
